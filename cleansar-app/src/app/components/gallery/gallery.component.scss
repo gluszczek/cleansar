@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    text-align: center;
+    min-height: 300px;
+    line-height: 40vh;
+    min-width: 300px;
+    width: 40vh;
+    font-size: 30px;
+  }
+
+  .slider {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }

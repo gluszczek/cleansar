@@ -1,0 +1,55 @@
+.background-logo-layer {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../assets/cleansar-white.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+#backgroundMask {
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/mask_desktop.png");
+    background-color: #cccccc;
+    background-repeat: repeat;
+    opacity: 0.5;
+  }
+
+  .margin-halfpage {
+      margin-top: 20vh;
+      margin-bottom: 40vh;
+  }
+
+  .app-section {
+      min-height: 40vh;
+
+      .left-half-image {
+        text-align: right;
+      }
+
+      .middle-text {
+        display: table-cell;
+        vertical-align: middle;
+        height: 40vh;
+      }
+  }
+
+  .slider {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }
