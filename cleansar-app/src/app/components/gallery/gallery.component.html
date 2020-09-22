@@ -1,40 +1,30 @@
 
 <div  class="container-fluid">
-    <!-- <div class="row">
-            <div class="slide-wrap">
-
-                <a href="#slide-1">1</a>
-                <a href="#slide-2">2</a>
-                <a href="#slide-3">3</a>
-                <a href="#slide-4">4</a>
-                <a href="#slide-5">5</a>
-
-                <div class="slider">
-                    <div class="slide" id="slide-1">1</div>
-                    <div class="slide" id="slide-2">2</div>
-                    <div class="slide" id="slide-3">3</div>
-                    <div class="slide" id="slide-4">4</div>
-                    <div class="slide" id="slide-5">5</div>
-                </div>
-            </div>
-    </div> -->
-
     <div class="row">
-        <div class="slider">
+        <div class="mx-auto">
+                <button mat-stroked-button color="accent" (click)="openDialog(0)">PRZEGLĄDAJ</button>
+        </div>
+        <div class="arrows-container">
+                <div class="arrow-left-bg" (mouseenter)="onLeftHover(this)">
+    
+                        <div class="arrow-left">
+                                <i class="material-icons">
+                                    keyboard_arrow_left
+                                </i>
+                            </div>
+                </div>
+                <div class="arrow-right-bg" (mouseenter)="onRightHover(this)">
+
+                        <div class="arrow-right">
+                                <i class="material-icons">
+                                    keyboard_arrow_right
+                                </i>
+                            </div>
+                </div>
+        </div>
+        <div id="slider">
             <div class="flex-container">
-                <img src="../../../assets/gallery/1.jpg" class="first">
-                <img src="../../../assets/gallery/2.jpg" class="second">
-                <img src="../../../assets/gallery/3.jpg">
-                <img src="../../../assets/gallery/4.jpg">
-                <img src="../../../assets/gallery/5.jpg">
-                <img src="../../../assets/gallery/6.jpg">
-                <img src="../../../assets/gallery/7.jpg">
-                <img src="../../../assets/gallery/8.jpg">
-                <img src="../../../assets/gallery/4.jpg">
-                <img src="../../../assets/gallery/5.jpg">
-                <img src="../../../assets/gallery/6.jpg">
-                <img src="../../../assets/gallery/7.jpg">
-                <img src="../../../assets/gallery/8.jpg">
+                <img [src]="image" [style.z-index]="999 - i" (click)="openDialog(i)" *ngFor="let image of images; index as i">
               </div>
         </div>
     </div>

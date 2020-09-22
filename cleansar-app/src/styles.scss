@@ -8,3 +8,24 @@ body {
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.app-section {
+    min-height: 100vh;
+    padding-top: calc(100px + 10vh);
+
+    h2 {
+      text-align: center;
+      width: 100%;
+      color: lightgrey;
+    }
+
+    .left-half-image {
+      text-align: right;
+    }
+
+    .middle-text {
+      display: table-cell;
+      vertical-align: middle;
+      height: 40vh;
+    }
+}

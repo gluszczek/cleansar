@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <h2>KONTAKT</h2>
+    </div>
+    <div class="row">
+        <div class="offset-md-1 col-md-3">
+          <mat-chip-list aria-label="Fish selection">
+              <mat-chip>cleansar.kontakt@gmail.com</mat-chip>
+              <mat-chip>tel. 881-481-966</mat-chip>
+              <mat-chip>www.facebook.com/Cleansar</mat-chip>
+            </mat-chip-list>
+        </div>
+        <div class="col-md-7">
+                <div class="example-container">
+                        <mat-form-field>
+                          <input matInput placeholder="Twój adres e-mail">
+                        </mat-form-field>
+                        <mat-form-field>
+                          <input matInput placeholder="Temat">
+                        </mat-form-field>
+                      
+                        <mat-form-field>
+                          <textarea matInput placeholder="Treść wiadomości"></textarea>
+                        </mat-form-field>
+                        
+                        <div class="mx-auto">
+                            <button mat-stroked-button color="accent" (click)="openDialog(0)">WYŚLIJ</button>
+                        </div>
+                </div>
+        </div>
+           
+    </div>
+</div>

@@ -1,42 +1,133 @@
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  // background-color: DodgerBlue;
-
-  .first {
-    z-index: 51;
-  }
-
-  .second {
-    z-index: 50;
-  }
 }
 
-.flex-container > div {
-  background-color: #f1f1f1;
-  margin: 10px;
-  text-align: center;
-  min-height: 300px;
-  line-height: 40vh;
-  height:  40vh;
-  min-width: 300px;
-  width: 40vh;
-  font-size: 30px;
-}
 
 .flex-container > img {
-  padding: 20px;
   height: 30vh;
-  margin: 10px;
+  min-height: 300px;
+  margin-top: 100px;
   transform: skewY(10deg);
-  margin-right: -150px;
+  margin-right: -150px;  
+  transition: ease-in 100ms;
+}
+
+.flex-container > img:hover {
+  cursor: pointer;
+  transform: skewY(10deg) scale(1.3); 
+  z-index: 1000 !important;
+  transition: ease-out 300ms;
+}
+
+#slider {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  height:  60vh;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
   
 }
 
-.slider {
-  width: 100%;
-  height:  50vh;
-  display: flex;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.arrows-container {
+  width: 100vw;
+  position: relative;
+  height: 1px;
+
+  .arrow-left-bg {
+    position: absolute;
+    left: 0;
+    z-index: 2000;
+    height: 500px;
+    width: 50px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  
+    &:hover {
+      background-color: #22222288;
+    }
+  
+    .arrow-left {
+      position: absolute;
+      left: 5px;
+      z-index: 2000;
+      top: 240px;
+      i {      
+        font-size: 30pt;
+      }
+  
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+  }
+  
+  
+  .arrow-right-bg {
+    position: absolute;
+    right: 0;
+    z-index: 2000;
+    height: 300px;
+    height: 500px;
+    width: 50px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  
+    &:hover {
+      background-color: #22222288;
+    }
+  
+    .arrow-right {
+      position: absolute;
+      right: 0;
+      z-index: 2000;
+      top: 240px;
+      i {      
+        font-size: 30pt;
+      }
+  
+      &:hover {
+        color: whitesmoke;
+      }
+    }
+  }
+}
+
+
+
+.imgbox {
+  display: grid;
+  height: 100%;
+}
+
+.center-fit {
+  max-width: 100%;
+  max-height: 100vh;
+  margin: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: greenyellow; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: lightgray; 
 }

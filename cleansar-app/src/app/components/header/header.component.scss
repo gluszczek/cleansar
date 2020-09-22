@@ -3,12 +3,21 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 70px;
+    height: 90px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 999;
+    z-index: 1999;
+    background-color: #28282899;
+
+    .navbar-brand {
+        white-space: pre-wrap;
+
+        span {
+            white-space: nowrap;
+        }
+    }
 
     .navbar {
         img {
@@ -19,7 +28,9 @@
 
     }
 
-
+    .nav-link {
+        cursor: pointer;
+    }
 }
 
 .accent {

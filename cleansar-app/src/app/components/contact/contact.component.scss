@@ -1,0 +1,14 @@
+::ng-deep .example-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #00000055;
+    padding: 50px;
+
+    textarea {
+        height: 200px;
+    }
+  }
+  
+  ::ng-deep .example-container > * {
+    width: 100%;
+  }
